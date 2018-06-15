@@ -15,19 +15,55 @@ public class Cliente extends Pessoa {
 
 	}
 
-	// Metodos
+	// setters
 
-	public void creditar() {
-
+	public void setNome(String nome) {
+		super.setNome(nome);
 	}
 
-	public void comprar() {
-
+	public void setId(String id) {
+		super.setId(id);
 	}
 
-	public void escolherMusica() {
-
+	public void setIdade(Integer idade) {
+		super.setIdade(idade);
 	}
 
+	public void setNumeroCartao(String numeroCartao) {
+		this.numeroCartao = numeroCartao;
+	}
 
+	public void setMesa(String mesa) {
+		this.mesa = mesa;
+	}
+
+	public void setSaldo(Double saldo) {   
+		this.saldo = saldo;
+	}
+
+	//getters
+
+	public String getNumeroCartao() {
+		return this.numeroCartao;
+	}
+
+	public String getMesa() {
+		return this.mesa;
+	}
+
+	public Double getSaldo() { 
+		return this.saldo;
+	}
+
+	public String getNome() {
+		return super.getNome();
+	}
+
+	public String getId() {
+		return super.getId();
+	}
+
+	public Integer getIdade() {
+		return super.getIdade();
+	}
 }

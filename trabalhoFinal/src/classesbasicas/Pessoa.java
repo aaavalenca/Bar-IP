@@ -11,18 +11,8 @@ public abstract class Pessoa {
 		this.idade = idade;
 	}
 
-	public String getNome() {
-		return this.nome;
-	}
-
-	public String getId() {
-		return this.id;
-	}
-
-	public Integer getIdade() {
-		return this.idade;
-	}
-
+	//setters
+	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -35,4 +25,18 @@ public abstract class Pessoa {
 		this.idade = idade;
 	}
 
+	//getters
+	
+	public String getNome() {
+		return this.nome;
+	}
+	
+	public String getId() {
+		return this.id;
+	}
+	
+	public Integer getIdade() {
+		return this.idade;
+	}
+	
 }

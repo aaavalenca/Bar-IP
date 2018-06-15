@@ -22,19 +22,22 @@ public class RepositorioListaProduto implements repositorioProduto {
 	}
 
 	public void remover(Produto produto) {
-		if (this.produto.getCodigo().equals(produto.getCodigo())) {
+		if (this.produto.getId().equals(produto.getId())) {
 			this.produto = this.next.produto;
 			this.next = this.next.next;
 		} else if (this.next.produto != null) {
 			this.next.remover(produto);
-		} else {
-			//throw Exception
 		}
-		
 	}
 
-	public boolean existe(Produto produto) {
-		return false;
+	public boolean existe(String id) {
+		if (this.produto.getId().equals(id)) {
+			return true;
+		} else if (this.next.produto != null) {
+			return this.next.existe(id);
+		} else {
+			return false;
+		}
 	}
 
 	

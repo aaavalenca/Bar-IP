@@ -7,6 +7,6 @@ public interface repositorioProduto {
 
 	void inserir(Produto produto);
 	void remover(Produto produto);
-	boolean existe (Produto produto);	
+	boolean existe(String id);
 	
 }
